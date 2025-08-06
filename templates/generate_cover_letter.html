@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html><head><title>Cover Letter Generator</title></head><body>
+<h2>AI Cover Letter Generator</h2>
+<form method="POST">
+  <textarea name="job_description" rows="10" cols="60" placeholder="Paste job description..." required></textarea><br>
+  <input type="submit" value="Generate">
+</form>
+{% if generated_letter %}
+<h3>Generated Letter:</h3><pre>{{ generated_letter }}</pre>
+{% endif %}
+<a href="/dashboard">Back</a>
+</body></html>
